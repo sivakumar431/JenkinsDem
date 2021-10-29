@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="1" ignored="0" total="6" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="112" started-at="2021-10-29T03:40:29Z" finished-at="2021-10-29T03:40:29Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="112" started-at="2021-10-29T03:40:29Z" finished-at="2021-10-29T03:40:29Z">
+      <class name="exampleone.PracticeOne">
+        <test-method status="PASS" signature="testcaseone()[pri:0, instance:exampleone.PracticeOne@1e88b3c]" name="testcaseone" duration-ms="15" started-at="2021-10-29T03:40:29Z" finished-at="2021-10-29T03:40:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcaseone -->
+        <test-method status="PASS" signature="testcasethree()[pri:0, instance:exampleone.PracticeOne@1e88b3c]" name="testcasethree" duration-ms="5" started-at="2021-10-29T03:40:29Z" finished-at="2021-10-29T03:40:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcasethree -->
+        <test-method status="PASS" signature="testcasetwo()[pri:0, instance:exampleone.PracticeOne@1e88b3c]" name="testcasetwo" duration-ms="0" started-at="2021-10-29T03:40:29Z" finished-at="2021-10-29T03:40:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcasetwo -->
+      </class> <!-- exampleone.PracticeOne -->
+      <class name="exampleone.PracticeTwo">
+        <test-method status="FAIL" signature="testcasefive()[pri:0, instance:exampleone.PracticeTwo@42d80b78]" name="testcasefive" duration-ms="5" started-at="2021-10-29T03:40:29Z" finished-at="2021-10-29T03:40:29Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at exampleone.PracticeTwo.testcasefive(PracticeTwo.java:18)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcasefive -->
+        <test-method status="PASS" signature="testcasefour()[pri:0, instance:exampleone.PracticeTwo@42d80b78]" name="testcasefour" duration-ms="5" started-at="2021-10-29T03:40:29Z" finished-at="2021-10-29T03:40:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcasefour -->
+        <test-method status="SKIP" signature="testcasesix()[pri:0, instance:exampleone.PracticeTwo@42d80b78]" name="testcasesix" duration-ms="0" started-at="2021-10-29T03:40:29Z" depends-on-methods="exampleone.PracticeTwo.testcasefive" finished-at="2021-10-29T03:40:29Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method PracticeTwo.testcasesix()[pri:0, instance:exampleone.PracticeTwo@42d80b78] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method PracticeTwo.testcasesix()[pri:0, instance:exampleone.PracticeTwo@42d80b78] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcasesix -->
+      </class> <!-- exampleone.PracticeTwo -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
